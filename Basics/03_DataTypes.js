@@ -26,3 +26,75 @@ symbol,
 bigint,
 object
 */
+
+
+/*
+There are 2 types of Data Type Premitive and Non Premitive 
+
+primitive
+7 types :String ,Number ,Boolean,null,Undefined,Symbol, bigint 
+
+Reference (Non Premititve)
+Array, objects,functions
+*/
+
+
+const id=Symbol('103')
+const anotherID=Symbol('103')
+console.log(id===anotherID); //false 
+console.log(typeof id);
+console.log(id==anotherID);//false
+
+
+// Array ,object,function
+
+const names=["Devansh","Devanshu","Dev"]
+let myObj={
+    name:"Devanshu",
+    age:22
+    
+}
+console.log(names); // forms an Array
+// console.log(name); // ReferenceError: name is not defined
+
+
+
+
+const myFunction=function(){
+    const name="Devanshu"
+    console.log("Hello world");
+    
+}
+console.log(typeof myFunction);//function 
+
+
+
+
+// Assigning the new Values to predefine data type
+
+let myName="Devanshu";
+let anotherName=myName
+anotherName="Dishu"
+
+console.log(myName); //the output didnt changed of previous assigned variable  
+console.log(anotherName);
+
+
+// But in Object it will changed in both
+
+let myobj={
+    email:"user@gmail.com",
+    upi:"user@ybl"
+}
+let myobj2=myobj
+myobj2.email="Dev@gmail.com"
+console.log(myobj.email);// same output for Both because boyh the variable are pointing to same object from stack to heap
+console.log(myobj2.email);
+
+
+
+
+
+
+
+
