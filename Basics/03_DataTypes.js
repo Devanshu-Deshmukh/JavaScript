@@ -91,6 +91,36 @@ myobj2.email="Dev@gmail.com"
 console.log(myobj.email);// same output for Both because boyh the variable are pointing to same object from stack to heap
 console.log(myobj2.email);
 
+// Use of Baptics
+
+const name="Max Verstappen"
+const campionship=4
+console.log(`Hello Simply Lovely from ${name} and  I have won ${campionship} campionship`);
+
+// String In-built Function
+// To find the character at a position
+const f1name=new String('Lewis')
+console.log(f1name[1]);
+console.log(f1name.__proto__);
+console.log(f1name.length);
+console.log(f1name.toUpperCase());
+console.log(f1name.charAt(2));//w
+console.log(f1name.indexOf('s'));// 4
+
+
+const newString=f1name.substring(1,5);
+console.log(newString);//ewis
+
+const anotherString=f1name.slice(1,3)
+console.log(anotherString);//doesnot take last index only ew
+
+const nextString="   Devanshu    "
+console.log(nextString);
+
+console.log(nextString.trim()); // remove the blank space
+
+
+
 
 
 
