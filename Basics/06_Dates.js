@@ -19,7 +19,7 @@ console.log(create.getTime());
 console.log(Math.floor(Date.now()/1000));
 
 let ruin=new Date()
-console.log(ruin.getMonth()); // always 1 less tha the current month
+console.log(ruin.getMonth()); // always 1 less than the current month
 console.log(ruin.getDay()); // day is friday
 
 
