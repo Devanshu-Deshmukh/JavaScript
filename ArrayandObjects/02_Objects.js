@@ -74,6 +74,25 @@ console.log(Object.keys(user));
 console.log(Object.values(user));
 console.log(user.hasOwnProperty('isLoggedin')); // true 
 
+//********************************************** */
+// Object restructing
+
+const course ={
+    coursename:"JavaScript",
+
+    price:"10000",
+    courseInstructor:"Devanshu"
+}
+
+const {courseInstructor}=course
+console.log(courseInstructor); // devanshu
+
+
+
+{
+    //JSON API
+}
+
 
 
 
